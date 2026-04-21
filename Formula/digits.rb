@@ -10,16 +10,16 @@ class Digits < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ivan-burazin/digits/releases/download/v0.1.0/digits_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "1c03e7ed878c77d8ae23a6002cf312a6e762d479fc56e64d3c4cfae05b3c6141"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.0/digits_0.1.0_Darwin_x86_64.tar.gz"
+      sha256 "3ff1c352688ce3334b8bf7a5128bb886f0c95810e167ff5a0218e707355ca141"
 
       define_method(:install) do
         bin.install "digits"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ivan-burazin/digits/releases/download/v0.1.0/digits_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "de967951f60fb1e5265bd3f4b8f01a783d5e780f88ccc76608d0a50c1b21819e"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.0/digits_0.1.0_Darwin_arm64.tar.gz"
+      sha256 "2890626c934d39f4d3ccf3419838b3184bc7b6bab431bb9ab3597edf1c2db247"
 
       define_method(:install) do
         bin.install "digits"
@@ -29,15 +29,15 @@ class Digits < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ivan-burazin/digits/releases/download/v0.1.0/digits_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "97d7e1253a41a23bae85b1dcc286818cd868bcef0e48389d164354fe77a738d9"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.0/digits_0.1.0_Linux_x86_64.tar.gz"
+      sha256 "e729a4c2e9d0f4135f08549cb106ad346d1cb7940946c071ce86d3599139ec32"
       define_method(:install) do
         bin.install "digits"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ivan-burazin/digits/releases/download/v0.1.0/digits_0.1.0_Linux_arm64.tar.gz"
-      sha256 "b4acf0d01bb75f4a4000497e357452863c1119d39db1136dd863ed2f32badda6"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.0/digits_0.1.0_Linux_arm64.tar.gz"
+      sha256 "054fe4ad0268f5de5713d6b05e2ef465ede37e1ea9aff535e3e112ce9c73d9c2"
       define_method(:install) do
         bin.install "digits"
       end
