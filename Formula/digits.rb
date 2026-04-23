@@ -5,21 +5,21 @@
 class Digits < Formula
   desc "Agent-native telephony CLI — manage phone numbers, SMS, and calls"
   homepage "https://github.com/ivan-burazin/digits"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.9/digits_0.1.9_Darwin_x86_64.tar.gz"
-      sha256 "b9f962bdbc788410547e4337505af4343b34f111bbd93530c5ecf90b27afe02b"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.10/digits_0.1.10_Darwin_x86_64.tar.gz"
+      sha256 "6c261d512ec5a1a63e488b81d0599e9c46575decd57bcd421a80e37523bd1218"
 
       define_method(:install) do
         bin.install "digits"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.9/digits_0.1.9_Darwin_arm64.tar.gz"
-      sha256 "20fda52dd0d0be23b6e80cf88c2e708bcc1a5871503fe326aaffff2453318d3b"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.10/digits_0.1.10_Darwin_arm64.tar.gz"
+      sha256 "7cff753bb17b299c05796f97e698c4331242551da96fd54d408b234946648e37"
 
       define_method(:install) do
         bin.install "digits"
@@ -29,15 +29,15 @@ class Digits < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.9/digits_0.1.9_Linux_x86_64.tar.gz"
-      sha256 "123d5fc634c8aa5575407e91a516bd7f2c0b46a23c95690be425f4979e42d4b3"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.10/digits_0.1.10_Linux_x86_64.tar.gz"
+      sha256 "0be4650d2be819e28596ce258f84010054cfedfedbd331c3d9559e2ea64b278d"
       define_method(:install) do
         bin.install "digits"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.9/digits_0.1.9_Linux_arm64.tar.gz"
-      sha256 "b738a75718dbd8ef83c12adba7a5870582cea44c3c1c4b9e60f0e4b5bba1188e"
+      url "https://github.com/ivan-burazin/digits-cli/releases/download/v0.1.10/digits_0.1.10_Linux_arm64.tar.gz"
+      sha256 "22cc183c193c629c8c2d6927e04d233d4e7c02b325e22416c33b81b01998e50a"
       define_method(:install) do
         bin.install "digits"
       end
